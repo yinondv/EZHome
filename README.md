@@ -1,4 +1,4 @@
-EzHome
+EZHome
 ======
 
 SE project 2014a 
