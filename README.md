@@ -1,7 +1,6 @@
 
-
 ![alt text][logo]
-[logo]:https://www.dropbox.com/s/2aw1f2kqazy9561/logo%20EZhome.jpg
+[logo]:https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "Ezhome"
 ======
 
 SE project 2014a 
