@@ -1,8 +1,7 @@
 
 
-Alt-H1
-======
- ![alt text](https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "logo title" )
+
+ ![alt](https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "logo title" )
  
  ======
 
