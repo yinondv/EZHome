@@ -1,6 +1,6 @@
  
- Inline-style: 
-![] (https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "logo title" )
+
+![logo] (https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "logo title" )
  
  ======
 
