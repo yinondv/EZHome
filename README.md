@@ -1,5 +1,4 @@
-
-![logo] (https://www.dropbox.com/s/ypc18bo8pe66ws2/ez1.png "logo title" )
+![logo] (http://www.upf.co.il/preview/862089527/9766b31ce6059cf281152d0027399fe7.html )
  
  ======
 
