@@ -6,8 +6,6 @@
 
 https://github.com/jce-il/se-class/blob/master/project/se14a-proj03-srs.docx
 
-SE project 2014a 
-
 ===========================================================
 טיוטות:
 אימייל שלנו - ezhome2014@gmail.com
