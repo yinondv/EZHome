@@ -5,8 +5,9 @@
 לינק לדף ההוראות של הSRS להגשה בסופ"ש הקרוב:
 
 https://github.com/jce-il/se-class/blob/master/project/se14a-proj03-srs.docx
-
+</p>
 ===========================================================
+<p dir="rtl">
 טיוטות:
 
 אימייל שלנו - ezhome2014@gmail.com
