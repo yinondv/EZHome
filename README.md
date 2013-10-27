@@ -1,7 +1,9 @@
-![logo] (http://www.up2me.co.il/images/50439258.png )
+![logo]: 
  
  ======
-
+ <p dir="rtl">
+לינק לדף ההוראות של הSRS להגשה בסופ"ש הקרוב:
+https://github.com/jce-il/se-class/blob/master/project/se14a-proj03-srs.docx
 
 SE project 2014a 
 
@@ -13,3 +15,4 @@ SE project 2014a
 123QWE789
 כלומר צריכים להיות על עברית במקלדת ולעשות את הסיסמא שכתובה באנגלית.... סורי!
 
+</p>
