@@ -1,8 +1,9 @@
-![logo]: 
+![logo](http://www.up2me.co.il/images/18345493.png)
  
  ======
  <p dir="rtl">
 לינק לדף ההוראות של הSRS להגשה בסופ"ש הקרוב:
+
 https://github.com/jce-il/se-class/blob/master/project/se14a-proj03-srs.docx
 
 SE project 2014a 
