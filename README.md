@@ -2,6 +2,9 @@
  
  ======
  <p dir="rtl">
+ 
+ https://github.com/jce-il/se-class/wiki אתר הקורס
+ 
 לינק לדף ההוראות של הSRS להגשה בסופ"ש הקרוב:
 
 https://github.com/jce-il/se-class/blob/master/project/se14a-proj03-srs.docx
