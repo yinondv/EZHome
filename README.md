@@ -1,4 +1,3 @@
-
  
  
  
@@ -38,13 +37,16 @@ The customer will be a very special woman - Yinon's wife, her name is Oshrat.
 * [Software Design Specification] (https://github.com/yinondv/EZHome/wiki/SDS-Software-Design-Specification)
 * [Iter0 -ZRF](https://github.com/yinondv/EZHome/wiki/Iter-0---ZRF)
 * [Iter1 MVP](https://github.com/yinondv/EZHome/wiki/Iter1-MVP)
+ 
+
 ==================================================
 
 
 <p dir="rtl">
- הקורס נעשה במסגרת קורס הנדסת תוכנה.
- 
- https://github.com/jce-il/se-class/wiki אתר הקורס
+_** הקורס נעשה במסגרת קורס הנדסת תוכנה.**_
+
+ אתר הקורס:
+ https://github.com/jce-il/se-class/wiki 
  
 
 </p>
