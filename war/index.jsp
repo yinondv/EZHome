@@ -1,5 +1,16 @@
-
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" 
+%><%@ page import="java.util.List"
+%><%@ page import="com.google.appengine.api.datastore.*"
+%><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
+%><%
+DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+try{
+	Entity entUser = datastore.get(KeyFactory.createKey("User","aaa"));
+	%><%=entUser.getProperty("email")%><%
+}catch(EntityNotFoundException e){
+	%>EntityNotFoundException<%
+}
+%><!DOCTYPE html>
 <html style="height:100%">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">

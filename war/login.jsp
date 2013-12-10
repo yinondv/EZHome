@@ -1,5 +1,8 @@
-
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" 
+%><%@ page import="java.util.List"
+%><%@ page import="com.google.appengine.api.datastore.*"
+%><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
+%><!DOCTYPE html>
 <html style="height:100%">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,8 +11,8 @@
 	<body dir=rtl style="top:0;right:0;width:100%;height:100%;margin:0;display:table">
 		<div id="loading-wrapper" style="position:absolute;top:50%;right:50%">
 			<div id="loading" style="position:relative;margin-top:-143px;right:-50%">
-				<form method=get action="index.html">
-					<table>
+				<form method=get action="index.jsp">
+			 		<table>
 						<tr>
 							<td colspan=2>
 								<img width=220 height=148 src="logo.png" />
@@ -32,9 +35,9 @@
 						</tr>
 						<tr>
 							<td colspan=2>
-								<a href="forgot_password.html">שכחתי את הסיסמה</a>
+								<a href="forgot_password.jsp">שכחתי את הסיסמה</a>
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								<a href="signup.html">הרשמה</a>
+								<a href="signup.jsp">הרשמה</a>
 							</td>
 						</tr>
 					</table>
