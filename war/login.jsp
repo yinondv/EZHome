@@ -11,7 +11,7 @@
 	<body dir=rtl style="top:0;right:0;width:100%;height:100%;margin:0;display:table">
 		<div id="loading-wrapper" style="position:absolute;top:50%;right:50%">
 			<div id="loading" style="position:relative;margin-top:-143px;right:-50%">
-				<form method=get action="index.jsp">
+				<form method=post action="index.jsp">
 			 		<table>
 						<tr>
 							<td colspan=2>
@@ -20,11 +20,11 @@
 						</tr>
 						<tr>
 							<td>שם משתמש</td>
-							<td><input type=text id=username></td>
+							<td><input type=text name=username></td>
 						</tr>
 						<tr>
 							<td>סיסמה</td>
-							<td><input type=password id=password></td>
+							<td><input type=password name=password></td>
 						</tr>
 						<tr>
 							<td colspan=2>

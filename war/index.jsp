@@ -1,12 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" 
 %><%@ page import="java.util.List"
 %><%@ page import="com.google.appengine.api.datastore.*"
+%><%@ page import="javax.servlet.http.*"
 %><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
 %><%
 DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 try{
 	Entity entUser = datastore.get(KeyFactory.createKey("User","aaa"));
-	%><%=entUser.getProperty("email")%><%
+	if(entUser==null || entUser.getProperty("password")==null || !entUser.getProperty("password").equals(request.getParameter("password"))){
+		response.sendRedirect("/login.jsp");
+	}
 }catch(EntityNotFoundException e){
 	%>EntityNotFoundException<%
 }
