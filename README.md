@@ -1,3 +1,5 @@
+http://savvy-celerity-404.appspot.com/login.jsp
+
 Welcome to the EZHome wiki!
 
 Project name: EZHome
