@@ -5,10 +5,16 @@
 %><%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"
 %><%
 DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
+String user=request.getParameter("user");
 try{
-	Entity entUser = datastore.get(KeyFactory.createKey("User","aaa"));
-	if(entUser==null || entUser.getProperty("password")==null || !entUser.getProperty("password").equals(request.getParameter("password"))){
-		response.sendRedirect("/login.jsp");
+	Entity entUser = datastore.get(KeyFactory.createKey("User",request.getParameter("user")));
+	if(
+		entUser==null ||
+		entUser.getProperty("password")==null ||
+		!entUser.getProperty("password").equals(request.getParameter("password"))
+	){
+		%><%=entUser%><%
+		//response.sendRedirect("/login.jsp");
 	}
 }catch(EntityNotFoundException e){
 	%>EntityNotFoundException<%
@@ -24,25 +30,7 @@ try{
 			<table border=1 style="width:100%">
 				<tr>
 					<td id="header" colspan=2>
-						<table>
-							<tr>
-								<td>שם משתמש</td>
-								<td><input type="text" /></td>
-							</tr>
-							<tr>
-								<td>סיסמה</td>
-								<td><input type="password" /></td>
-							</tr>
-							<tr>
-								<td colspan=2>
-									<label>
-										<input type="checkbox" />
-										זכור אותי
-									</label>
-									&nbsp;&nbsp;&nbsp;
-									<input type="button" value="כניסה" />
-								</td>
-						</table>
+						שלום <%=user%>
 					</td>
 					<td id="adbar" rowspan=2 style="width:200px;text-align:center">
 						<img src="logo.png" style="width:220px;height:148px" /><br />

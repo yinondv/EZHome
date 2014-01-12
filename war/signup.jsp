@@ -11,11 +11,11 @@ if(request.getParameter("user")!=null){
 	
 	DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 	
-	Entity entUser = new Entity("User",user);
+	Entity entUser = datastore.get(KeyFactory.createKey("User",user));
 	entUser.setProperty("password",pwd);
 	entUser.setProperty("email",email);
 	datastore.put(entUser);
-	response.sendRedirect("/userData.jsp");
+	response.sendRedirect("/userData.jsp?user="+user);
 }else{ //no request.getParameter("user")
 %><!DOCTYPE html>
 <html dir="rtl">

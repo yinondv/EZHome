@@ -20,7 +20,7 @@
 						</tr>
 						<tr>
 							<td>שם משתמש</td>
-							<td><input type=text name=username></td>
+							<td><input type=text name=user></td>
 						</tr>
 						<tr>
 							<td>סיסמה</td>
