@@ -1,8 +1,6 @@
- 
- 
- 
+http://savvy-celerity-404.appspot.com/login.jsp
 
-Welcome to the EZHome !
+Welcome to the EZHome wiki!
 
 Project name: EZHome
 
@@ -35,8 +33,11 @@ The customer will be a very special woman - Yinon's wife, her name is Oshrat.
 * [Development process] (https://github.com/yinondv/EZHome/wiki/Development-process-page)
 * [ Software Requirements Specification](https://github.com/yinondv/EZHome/wiki/SRS---Software-Requierments-Specification)
 * [Software Design Specification] (https://github.com/yinondv/EZHome/wiki/SDS-Software-Design-Specification)
-* [Iter0 -ZRF](https://github.com/yinondv/EZHome/wiki/Iter-0---ZRF)
+* [Iter0 -ZFR](https://github.com/yinondv/EZHome/wiki/Iter-0---ZFR)
 * [Iter1 MVP](https://github.com/yinondv/EZHome/wiki/Iter1-MVP)
+* [Iter 2] (https://github.com/yinondv/EZHome/wiki/Iter2)
+* [Iter 3] (https://github.com/yinondv/EZHome/wiki/Iter3)
+* [Iter 4] (https://github.com/yinondv/EZHome/wiki/Iter4)
  
 
 ==================================================
