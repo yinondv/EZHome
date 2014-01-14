@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+ 	<meta charset="UTF-8">
+	<script type="text/javascript" src="/info/sort/jquery.min.js"></script> <script type="text/javascript" src="/info/sort/jquery-migrate.js"></script>
+	
+<script type="text/javascript">
+	function send_form(prgname,arguments,target)
+	{
+		var input = '<input type="hidden" name="prgname" value="'+prgname+'">';
+		var input = input + '<input type="hidden" name="arguments" value="'+arguments+'">';
+		$('<form action="fireflyweb.aspx" method="post" target="'+target+'">'+input+'</form>').appendTo('body').submit();
+	}
+</script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$('#MainFrame').css('height',$(window).height());
+		});
+	</script>
+
+<title>המכללה האקדמית להנדסה ירושלים</title>
+
+<link href="/info/MagicStyles_Type_2.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="/info/sort/ddaccordion.js"></script>
+
+<script type="text/javascript">
+
+ddaccordion.init({
+	headerclass: "expandable", //Shared CSS class name of headers group that are expandable
+	contentclass: "categoryitems", //Shared CSS class name of contents group
+
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+
+
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+</script>
+
+<style type="text/css">
+
+.arrowlistmenu{
+width: 156px; text-align:right/*width of accordion menu*/
+}
+
+.arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
+font: bold 14px Arial;
+color: white;
+background: black url(/info/images/titlebar.png) repeat-x center right;
+margin-bottom: 10px; /*bottom spacing between header and rest of content*/
+text-transform: uppercase;
+padding: 4px 10px 4px 0px; /*header text is indented 10px*/
+cursor: hand;
+cursor: pointer;
+}
+
+.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
+background-image: url(/info/images/titlebar-active.png);
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{
+color: #A70303;
+background: url(/info/images/arrowbullet.png) no-repeat center right; /*custom bullet list image*/
+display: block;
+padding: 2px 0;
+padding-right: 19px; /*link text is indented 19px*/
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px solid #dadada;
+font-size: 90%;
+}
+
+.arrowlistmenu ul li a:visited{
+/*color: #A70303;*/
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color: #A70303;
+background-color: #F3F3F3;
+}
+
+</style>
+
+</head>
+
+<body>
+<form>
+<table style="width:100%;height:100%;border:0">
+<tr><td>
+<div  class="bgGreen">
+	<div style="width:98%" class="TopCornerBg"></div>
+	<div style="width:13" class="topCorner"></div>
+</div>
+
+<div class="bgGreen">
+
+	<div style="width:100%;height:127" class="topHeader">
+		<div class="TableGreen">
+			<img src="/info/images/top_left.jpg" style="width:174;height:113;float: left" alt="לוגו של המוסד">
+				<a href="javascript:send_form('Menu','-N201638673,-A,-N096404361247000,','_self');">
+					<img src="/info/images/logo.jpg" style="width:167;height:113;border:0;float: right" alt="לוגו של המוסד וחזרה לתפריט הקודם">
+				</a>
+			<img src="/info/images/top_right.jpg" style="width:396;height:113;text-align:right;float: right" alt="לוגו של המוסד">
+		</div>
+
+	</div>
+</div>
+</td></tr>
+<tr><td>
+<table style="width:100%;height:100%;border:0">
+	<tr>
+		<td style="width:*;border:0" >
+			<iframe id="MainFrame" name="MainFrame" src="fireflyweb.aspx?prgname=MenuCall&amp;arguments=-N201638673,-N096404361247000,-N  61," style="border:0;width:100%; height: 100%;margin: 0"></iframe>
+		</td>
+		<td style="width:170px;vertical-align:text-top">
+			 <h1 style="text-align:right">שלום שרת רועי</h1>
+
+<div class="arrowlistmenu">
+
+
+
+
+
+<h3 class="menuheader expandable">הודעות ופניות</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0018,','MainFrame');">
+					הודעות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0023,','MainFrame');">
+					מערכת פניות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0048,','MainFrame');">
+					מצב פניות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0007,','MainFrame');">
+					מערכת אישורים
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">מערכת שעות</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0003,','MainFrame');">
+					רשימת מערכת שעות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0016,','MainFrame');">
+					לוח מערכת שעות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0202,','MainFrame');">
+					חיפוש - מערכת שעות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0122,','MainFrame');">
+					מערכת כלל מכללתית
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">בחינות וציונים</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0082,','MainFrame');">
+					צפיה בבחינות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0006,','MainFrame');">
+					תכנית בחינות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0077,','MainFrame');">
+					רישום למועד ב
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0050,','MainFrame');">
+					הגשת עבודות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0004,','MainFrame');">
+					גליון ציונים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0013,','MainFrame');">
+					רשימת ציונים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0135,','MainFrame');">
+					לוח בחינות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0063,','MainFrame');">
+					מבחנים אמריקאים
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">אתרי קורסים</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0061,','MainFrame');">
+					כניסה לאתרי קורסים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0062,','MainFrame');">
+					כניסה לפורומים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0055,','MainFrame');">
+					חיפוש - אתרי קורסים
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">רישום לקורסים</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0020,','MainFrame');">
+					רישום לקורס/ים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0019,','MainFrame');">
+					הצג מערכת שעות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0022,','MainFrame');">
+					בטל רישום לקורס/ים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0036,','MainFrame');">
+					רשימות המתנה
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable"> שכ"ל</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0011,','MainFrame');">
+					כרטסת כספית
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">עדכון פרטים</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0012,','MainFrame');">
+					עדכון פרטים אישיים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0067,','MainFrame');">
+					הגדרות אישיות
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">כללי</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0124,','MainFrame');">
+					שרת דואר חדש
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">היחידה להכוון תעסוקתי</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0150,','MainFrame');">
+					היחידה להכוון תעסוקתי
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">קבצים להורדה</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0134,','MainFrame');">
+					מינהל סטודנטים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0138,','MainFrame');">
+					ועדת הוראה
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0125,','MainFrame');">
+					דיקנאט הסטודנטים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0123,','MainFrame');">
+					מדור שכ"ל
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">שאלות נפוצות</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0151,','MainFrame');">
+					מינהל סטודנטים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0152,','MainFrame');">
+					מדור בחינות
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0153,','MainFrame');">
+					ועדת הוראה
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0154,','MainFrame');">
+					מדור סיוע
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0155,','MainFrame');">
+					שכ"ל
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">שנה"ל תשע"ד</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0139,','MainFrame');">
+					לוחות תאריכים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0140,','MainFrame');">
+					פתיחת שנה"ל
+		
+</a></li>
+
+
+ 
+
+
+
+	</ul>
+
+<h3 class="menuheader expandable">תוכניות לימודים</h3>
+<ul class="categoryitems">
+
+
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0126,','MainFrame');">
+					תעשייה וניהול
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0127,','MainFrame');">
+					אלקטרוניקה
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0128,','MainFrame');">
+					תוכנה
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0129,','MainFrame');">
+					חומרים מתקדמים
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0130,','MainFrame');">
+					פרמצבטית
+		
+</a></li>
+
+
+ 
+
+
+
+<li><a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N0132,','MainFrame');">
+					מכונות
+		
+</a></li>
+
+
+ 
+
+</ul>
+</div>
+	<div class="MenuSidebottom"  style="text-align:right">
+		 <div class="Title2Page2" style="height:33">
+			<a href="javascript:send_form('MenuCall','-N201638673,-N096404361247000,-N97','_parent');" class="exitLink">
+				יציאה
+			</a>
+		</div>
+
+	</div>
+</td>
+ </tr>
+</table>
+
+
+</td></tr></table>
+</form>
+</body>
+</html>
+
+ <!--FileName : Menu_4.htm-->
