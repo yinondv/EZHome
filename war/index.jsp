@@ -25,12 +25,19 @@ try{
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>EZHome</title>
 	</head>
-	<body dir=rtl style="height:100%">
+	<body dir=rtl style="height:95%">
 		<div style="position: absolute;top:0;right:0;height:100%;width:100%">
 			<table border=1 style="width:100%">
 				<tr>
 					<td id="header" colspan=2>
-						שלום <%=user%>
+						שלום <%=user%><br />
+						<!--<a href="http://www.daatemet.org.il" target="_blank">
+							<table><tr>
+							<td width="112" height="147"><img src="http://www.daatemet.org.il/images/left_animation.gif"></td>
+							<td background="/images/bg_slogan.gif" width="100%" dir="RTL"><div class="slogan">התנועה לשחרור מהדת, לקידום הנאורות וההשכלה</div></td>
+							<td width="112" height="147"><img src="http://www.daatemet.org.il/images/right_animation.gif"></td>
+							</tr></table>
+						</a>-->
 					</td>
 					<td id="adbar" rowspan=2 style="width:200px;text-align:center">
 						<img src="logo.png" style="width:220px;height:148px" /><br />
@@ -47,6 +54,8 @@ try{
 						<br /><br />
 						<input type="button" id="btnPersonal" style="width:150px" value="עדכון פרטים" onClick="loadIt('personal')" />
 						<br /><br />
+						<input type="button" id="btnStatus" style="width:150px" value="מצב נוכחי" onClick="loadIt('status')" />
+						<br /><br />
 						סה"כ יתרת הוצאות החודש: <%=0%><br />
 						יתרה חודשית: <%=0%><br />
 						<br />
@@ -60,7 +69,7 @@ try{
 		
 		<script>
 			function loadIt(page){
-				document.getElementById("ifrmContent").src=page+".jsp";
+				document.getElementById("ifrmContent").src=page+".jsp?user=<%=user%>";
 			}
 		</script>
 	</body>

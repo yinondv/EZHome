@@ -5,18 +5,18 @@
 %><%
 if(request.getParameter("username")!=null){
 	//TODO: validate input values
-	String user =request.getParameter("username" );
-	String pname  =request.getParameter("pname"  );
-	String fname  =request.getParameter("fname"  );
+	String user    =request.getParameter("username");
+	String pname   =request.getParameter("pname"   );
+	String fname   =request.getParameter("fname"   );
 	String salary  =request.getParameter("salary"  );
-	String housing  =request.getParameter("housing"  );
-	String traffic  =request.getParameter("traffic"  );
-	String clothing  =request.getParameter("clothing"  );
-	String houskeep  =request.getParameter("houskeep"  );
-	String dest1  =request.getParameter("dest1"  );
-	String dest2  =request.getParameter("dest2"  );
-	String dest3  =request.getParameter("dest3"  );
-	String dest4  =request.getParameter("dest4"  );
+	String housing =request.getParameter("housing" );
+	String traffic =request.getParameter("traffic" );
+	String clothing=request.getParameter("clothing");
+	String houskeep=request.getParameter("houskeep");
+	String dest1   =request.getParameter("dest1"   );
+	String dest2   =request.getParameter("dest2"   );
+	String dest3   =request.getParameter("dest3"   );
+	String dest4   =request.getParameter("dest4"   );
 	
 	DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 	
