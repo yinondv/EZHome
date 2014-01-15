@@ -43,7 +43,7 @@ try{
 					</td>
 					<td id="sidebar" rowspan=2 style="width:200px;text-align:center;vertical-align:top">
 						<h2>שלום <%=user%></h2><br />
-						<img src="logo.png" style="width:220px;height:148px" /><br />
+						<img src="logo.jpg" style="width:220px;height:148px" /><br />
 						<!--<div style="width:220px;height:450px;background-color:#f00;">פרסומת</div>-->
 						<a href="http://www.super-pharm.co.il/heb/HomePage/"><img src="ad-v.gif" /></a>
 					</td>

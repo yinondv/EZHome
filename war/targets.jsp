@@ -32,7 +32,7 @@ if(request.getParameter("target1")!=null){
 			<table class='article_table'>
 				<tr>
 					<td>יעד 1:</td>
-					<td><select name="target1"><!-- <%=entUser.getProperty("target1")%> -->
+					<td><select name="target1">
 						<option value="car"         <%if(entUser.getProperty("target1")!=null && entUser.getProperty("target1").equals("car"        )){%>selected<%}%> >רכב</option>
 						<option value="house"       <%if(entUser.getProperty("target1")!=null && entUser.getProperty("target1").equals("house"      )){%>selected<%}%> >דירה</option>
 						<option value="electricity" <%if(entUser.getProperty("target1")!=null && entUser.getProperty("target1").equals("electricity")){%>selected<%}%> >מוצרי חשמל</option>
