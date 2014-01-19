@@ -43,6 +43,55 @@ if(request.getParameter("housing_0")!=null){
 	entUser.setProperty("cosmetics_1",request.getParameter("cosmetics_1"));
 	entUser.setProperty("cosmetics_2",request.getParameter("cosmetics_2"));
 	entUser.setProperty("misc_0",request.getParameter("misc_0"));
+	
+	Long total=
+		Long.parseLong((String)entUser.getProperty("housing_0"))+
+		Long.parseLong((String)entUser.getProperty("housing_1"))+
+		Long.parseLong((String)entUser.getProperty("housing_2"))+
+		Long.parseLong((String)entUser.getProperty("savings_0"))+
+		Long.parseLong((String)entUser.getProperty("transportation_0"))+
+		Long.parseLong((String)entUser.getProperty("transportation_1"))+
+		Long.parseLong((String)entUser.getProperty("transportation_2"))+
+		Long.parseLong((String)entUser.getProperty("transportation_3"))+
+		Long.parseLong((String)entUser.getProperty("utilities_0"))+
+		Long.parseLong((String)entUser.getProperty("utilities_1"))+
+		Long.parseLong((String)entUser.getProperty("utilities_2"))+
+		Long.parseLong((String)entUser.getProperty("utilities_3"))+
+		Long.parseLong((String)entUser.getProperty("utilities_4"))+
+		Long.parseLong((String)entUser.getProperty("utilities_5"))+
+		Long.parseLong((String)entUser.getProperty("utilities_6"))+
+		Long.parseLong((String)entUser.getProperty("shopping_0"))+
+		Long.parseLong((String)entUser.getProperty("shopping_1"))+
+		Long.parseLong((String)entUser.getProperty("shopping_2"))+
+		Long.parseLong((String)entUser.getProperty("kids_0"))+
+		Long.parseLong((String)entUser.getProperty("kids_1"))+
+		Long.parseLong((String)entUser.getProperty("kids_2"))+
+		Long.parseLong((String)entUser.getProperty("kids_3"))+
+		Long.parseLong((String)entUser.getProperty("kids_4"))+
+		Long.parseLong((String)entUser.getProperty("kids_5"))+
+		Long.parseLong((String)entUser.getProperty("education_0"))+
+		Long.parseLong((String)entUser.getProperty("education_1"))+
+		Long.parseLong((String)entUser.getProperty("leisure_0"))+
+		Long.parseLong((String)entUser.getProperty("leisure_1"))+
+		Long.parseLong((String)entUser.getProperty("leisure_2"))+
+		Long.parseLong((String)entUser.getProperty("leisure_3"))+
+		Long.parseLong((String)entUser.getProperty("leisure_4"))+
+		Long.parseLong((String)entUser.getProperty("cosmetics_0"))+
+		Long.parseLong((String)entUser.getProperty("cosmetics_1"))+
+		Long.parseLong((String)entUser.getProperty("cosmetics_2"))+
+		Long.parseLong((String)entUser.getProperty("misc_0"));
+
+	if(entUser.getProperty("total_expenses")==null){
+		entUser.setProperty("total_expenses",total);
+		entUser.setProperty("avg_expenses",total);
+	}else{
+		entUser.setProperty("total_expenses",total);
+		entUser.setProperty("avg_expenses",( //moving avg
+				total+
+				(Long)entUser.getProperty("avg_expenses")
+				)/2);
+	}
+	
 	datastore.put(entUser);
 }
 %><html>

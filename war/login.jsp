@@ -15,7 +15,7 @@
 			 		<table>
 						<tr>
 							<td colspan=2>
-								<img width=220 height=148 src="logo.png" />
+								<img width=220 height=148 src="logo.jpg" />
 							</td>
 						</tr>
 						<tr>

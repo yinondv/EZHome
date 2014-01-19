@@ -10,6 +10,18 @@ Entity entUser = datastore.get(KeyFactory.createKey("User",request.getParameter(
 if(request.getParameter("salary")!=null){
 	entUser.setProperty("salary",request.getParameter("salary"));
 	entUser.setProperty("misc_income",request.getParameter("misc_income"));
+	if(entUser.getProperty("total_income")==null){
+		entUser.setProperty("total_income",
+				Integer.parseInt(request.getParameter("salary"))+
+				Integer.parseInt(request.getParameter("misc_income"))
+				);
+	}else{ //moving avg
+		entUser.setProperty("total_income",(
+				Long.parseLong(request.getParameter("salary"))+
+				Long.parseLong(request.getParameter("misc_income"))+
+				(Long)entUser.getProperty("total_income")
+				)/2);
+	}
 	datastore.put(entUser);
 }
 %><!DOCTYPE html>

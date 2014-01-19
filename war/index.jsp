@@ -6,8 +6,9 @@
 %><%
 DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 String user=request.getParameter("user");
+Entity entUser=null;
 try{
-	Entity entUser = datastore.get(KeyFactory.createKey("User",request.getParameter("user")));
+	entUser = datastore.get(KeyFactory.createKey("User",request.getParameter("user")));
 	if(
 		entUser==null ||
 		entUser.getProperty("password")==null ||
@@ -25,7 +26,7 @@ try{
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>EZHome</title>
 	</head>
-	<body dir=rtl style="height:95%">
+	<body dir=rtl style="height:95%;background-color:#eee">
 		<div style="position: absolute;top:0;right:0;height:100%;width:100%">
 			<table border=1 style="height:100%;width:100%">
 				<tr style="height:1px">
@@ -43,7 +44,7 @@ try{
 					</td>
 					<td id="sidebar" rowspan=2 style="width:200px;text-align:center;vertical-align:top">
 						<h2>שלום <%=user%></h2><br />
-						<img src="logo.jpg" style="width:220px;height:148px" /><br />
+						<img src="logo.png" style="width:220px;height:148px" /><br />
 						<!--<div style="width:220px;height:450px;background-color:#f00;">פרסומת</div>-->
 						<a href="http://www.super-pharm.co.il/heb/HomePage/"><img src="ad-v.gif" /></a>
 					</td>
@@ -58,15 +59,21 @@ try{
 						<br /><br />
 						<input type="button" id="btnPersonal" style="width:150px" value="עדכון פרטים" onClick="loadIt('personal')" />
 						<br /><br />
-						<input type="button" id="btnStatus" style="width:150px" value="מצב נוכחי" onClick="loadIt('status')" />
+						<input type="button" id="btnAbout" style="width:150px" value="אודות" onClick="loadIt('about')" />
 						<br /><br />
-						סה"כ יתרת הוצאות החודש: <%=0%><br />
-						יתרה חודשית: <%=0%><br />
+						סה"כ יתרת הוצאות החודש: <%=entUser.getProperty("total_expenses")!=null ? entUser.getProperty("total_expenses") : 0%><br />
+						יתרה חודשית: <%=entUser.getProperty("total_income")!=null && entUser.getProperty("total_expenses")!=null ?
+										(
+											(Long)entUser.getProperty("total_income")-(Long)entUser.getProperty("total_expenses")>0?
+											(Long)entUser.getProperty("total_income")-(Long)entUser.getProperty("total_expenses"):
+											0
+										):
+										0%><br />
 						<br />
-						ממוצע הכנסות חודשיות: <%=0%><br />
-						ממוצע הוצאות חודשיות: <%=0%><br />
+						ממוצע הכנסות חודשיות: <%=entUser.getProperty("total_income")!=null ? entUser.getProperty("total_income") : 0%><br />
+						ממוצע הוצאות חודשיות: <%=entUser.getProperty("total_expenses")!=null ? entUser.getProperty("avg_expenses") : 0%><br />
 					</td>
-					<td id="content"><iframe id="ifrmContent" style="height:100%;width:100%" ></iframe></td>
+					<td id="content" background-image: url(content.jpg)><iframe id="ifrmContent" style="height:100%;width:100%" ></iframe></td>
 				</tr>
 			</table>
 		</div>
